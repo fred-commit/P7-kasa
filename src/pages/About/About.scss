@@ -1,0 +1,17 @@
+@import "./../../assets/style/variables.scss";
+
+.about {
+  &__dropdowns {
+    margin: 30px auto;
+    width: calc(80% - 10%);
+    color: $color-primary;
+
+    @media (max-width: 992px) {
+      width: calc(80% - 15%);
+    }
+
+    @media (max-width: 768px) {
+      width: calc(100% - 40px);
+    }
+  }
+}
