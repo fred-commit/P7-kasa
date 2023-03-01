@@ -1,0 +1,54 @@
+@import './../../assets/style/variables.scss';
+
+.wrapper-error {
+    margin-top: 2rem;
+
+    color: $color-primary;
+    width: 100%;
+    text-align: center;
+    padding: 10rem 0;
+
+    &__number {
+        font-weight: bold;
+        font-size: 288px;
+
+        @media (max-width: 992px) {
+            font-size: 200px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 96px;
+        }
+    }
+
+    &__msg {
+        margin: 1rem 0 5rem 0;
+        font-weight: 500;
+        font-size: 36px;
+
+        @media (max-width: 992px) {
+            font-size: 25px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    &__back-link {
+        text-decoration: underline;
+        color: $color-primary;
+        font-size: 18px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        &:hover,
+        &:focus,
+        &:visited {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+    }
+}
